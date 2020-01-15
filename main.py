@@ -11,7 +11,7 @@ def main():
     parser.add_argument('-i', '--input', help='Calibre server to Index. Default: None', default=None)
     parser.add_argument('-ls', '--list_servers', action='store_true', help='List servers in DB.', default=False)
     parser.add_argument('-dls','--download_server', help='Download all books from server')
-    parser.add_argument('-o', '--download_location', help='Download location')
+    parser.add_argument('-o', '--download_location', help='Save location')
     args = parser.parse_args()
 
     db = calibro.Database(args.db)
